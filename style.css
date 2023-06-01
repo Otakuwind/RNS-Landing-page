@@ -140,3 +140,14 @@ background-color:#686B9D;
 text-shadow:2px 3px 2px grey;
 box-shadow:4px 2px 4px white;
     }
+
+@media (max-width: 700px) {
+  .choice {
+    font-size: 110px;
+  }
+}
+@media (max-width: 500px) {
+  .choice {
+    font-size: 80px;
+  }
+}
