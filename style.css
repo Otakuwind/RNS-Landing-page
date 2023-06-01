@@ -1,3 +1,11 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
 .sun{
   width: 150px;
   height: 150px;
@@ -8,31 +16,25 @@
 }
 
 .text{
-   box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Tahoma, sans-serif;
      display: flex;
   justify-content: center;
   align-items: center;
   color: beige;
 }
 
-.signupfrm{
-   display: flex;
-  justify-content: center;
+.centered-div {
+  display: flex;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  height: 100%;
 }
 
-
-.form{          
-    width: 280px;
-    border-radius: 8px;
-    padding: 20px 40px;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-     justify-content: center;
+.p {
+  display: flex;
   align-items: center;
+  justify-content: center;
+ margin-top: 80px;
+  color:beige;
 }
 
 
@@ -50,22 +52,21 @@
  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 80px;
   border: none;
-  background-color: rgb(4, 233, 221);
+  background-color: rgb(4, 141, 233);
   color: white;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 20px;
   margin-top: 30px;
-  margin-bottom: 40px;
-  height: 50px;
+  margin-bottom: 60px;
+  height: 40px;
   border-radius: 30%;
   -webkit-border-radius:20px;
   -moz-border-radius:20px;
   -ms-border-radius:20px;
   -o-border-radius:20px;
-  box-shadow: 0 60px 12px -18px rgba(214, 213, 213, 0.438), 0 60px 20px -12px rgba(226, 225, 225, 0.39);
+  box-shadow: 0 60px 12px -18px rgb(0, 0, 0), 0 60px 20px -12px rgb(0, 0, 0);
   animation: anime 1s infinite ease-in-out alternate;
   -webkit-animation:anime 1s infinite ease-in-out alternate ;
 }
@@ -77,13 +78,34 @@
 -moz-transform: translateY(20px);
 -ms-transform: translateY(20px);
 -o-transform: translateY(20px);
-box-shadow: 0 60px 12px -18px rgba(214, 213, 213, 0.438), 0 60px 20px -12px rgba(226, 225, 225, 0.39);
+box-shadow: 0 60px 12px -18px rgb(0, 0, 0), 0 60px 20px -12px rgb(0, 0, 0);
     }
    
 }
 
+.p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family:monospace ;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 6s,
+    cursor .7s step-end infinite alternate;
+}
 
 
+/*blinking cursor*/
+@keyframes cursor {
+    50%{
+        border-color: transparent}
+    }
+/*  typing effect*/
+@keyframes typing {
+    from {width: 0}
+}
 
 
 
